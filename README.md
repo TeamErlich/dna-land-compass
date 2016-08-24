@@ -4,6 +4,8 @@ A secure, versatile site for VCF manipulation that runs entirely in the browser.
 
 Website: https://compass.dna.land
 
+GitHub: https://github.com/TeamErlich/dna-land-compass
+
 Synopsis
 --------
 
