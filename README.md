@@ -21,6 +21,16 @@ The site uses the dbSNP database to gather the coordinates (chromosome and posit
 #### Reporting
 Once the coordinates are used to decompress a section of the user's VCF, the selection of SNPs is returned in a report. For each variant, the genotype is displayed, along with an array of resources (SNPedia, PubMed, dbSNP, GWAS, and Google).
 
+Installation
+-------
+
+Anyone can download the source files for Compass and even access our back-end. Here's how: 
+
+1. Download and unzip this repository. 
+2. Open `index.html` in **Safari**, **Chrome**, or **Firefox**.
+
+That's it!
+
 Manuscript
 -------
 
