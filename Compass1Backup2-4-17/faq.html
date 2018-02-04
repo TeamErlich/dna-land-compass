@@ -1,0 +1,407 @@
+<!-- 
+
+Copyright (C) 2016 Erlich Lab
+License: BSD (see LICENSE file)
+
+-->
+
+<!DOCTYPE html> 
+<html> 
+	<head> 
+
+		<meta charset="utf-8">
+		<title>FAQ</title> 
+		<link rel="stylesheet" href="css/navbar.css" type="text/css">
+		<link rel="stylesheet" href="css/standard.css" type="text/css">
+
+		<!--Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+	    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+
+		<!--FROM DNA.Land-->
+		<link rel="stylesheet" href="assets/DNALAND/style.css">
+	    <link rel="stylesheet" href="assets/DNALAND/panel.css">
+
+	    <link href="assets/animate/animate.css" rel="stylesheet" type="text/css">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+
+	</head>
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded faqNav"> 
+	  	<div class="container">
+   			<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+       				<span class="icon-bar"></span>
+      			</button>
+				<a class="navbar-brand page-scroll textlink" id="override" style="pointer-events: none;">
+      				<span style="vertical-align: center; height: 60px; line-height: 32px; margin-left: -6px; margin-right: 0px;" id="override" >by</span>
+  	  			</a>
+      			<a class="navbar-brand page-scroll textlink" id="override" href="https://dna.land" target="_blank">
+      				<span style="vertical-align: center; height: 60px; line-height: 32px; margin-left: -8px;" id="override">DNA.LAND</span>
+  	  			</a>
+    		</div>
+   			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      			<ul class="nav navbar-nav navbar-right">
+        			<li class="hidden">
+        				<a class="page-scroll" href="#page-top"></a>
+       				</li>
+        			<li>
+        				<a class="page-scroll" href="index.html" id="override">HOME</a>
+        			</li>
+					<li id="explorerLi">
+         				<a class="page-scroll" href="explorer.html" id="override">COMPASS</a>
+        			</li>
+					<li id="guideLi">
+	  					<a class="page-scroll" href="guide.html" id="override">GUIDE</a>
+        			</li>
+        			<li id="faqLi">
+        				<a class="page-scroll" href="faq.html" id="override">FAQ</a>
+			        </li>
+			        <li id="aboutLi">
+			        	<a class="page-scroll" href="about.html" id="override">ABOUT</a>
+			        </li>
+					<li id="ribbonLi">
+   						<div class="corner-ribbon top-right sticky red shadow">BETA</div>
+  					</li>
+      			</ul>
+    		</div>
+ 		</div>
+	</nav>
+	<body> 
+		<div id="page-top" style="padding-top: 1200px; margin-top: -1200px;"></div>
+
+		<div id="faqText">
+			<h2>FAQ</h2>
+			<div id="contentsDiv" style=" min-width: 800px">
+				<ul id="contents">
+					<li><a href="#Q1">
+						Where can I get these files (.vcf.gz and .tbi)? 
+					</a></li>
+					<li><a href="#Q1-1">
+						Does <em>Compass</em> provide information that connects my genotype to a physical trait?
+					</a></li>
+					<li><a href="#Q1-2">
+						What types of VCFs does <em>Compass</em> accept?
+					</a></li><li><a href="#Q1-3">
+						Does the data need to have rsIDs?
+					</a></li><li><a href="#Q1-4">
+						Does <em>Compass</em> accept data that follows any format other than hg19/GRCh37?
+					</a></li>
+
+
+
+					<li><a href="#Q2">
+						What is DNA.Land?
+					</a></li><li><a href="#Q3">
+						What's happening with my files? 
+					</a></li><li><a href="#Q4">
+						How secure and private is my data? 
+					</a></li><li><a href="#Q5">
+						What is a compressed VCF file (.vcf.gz)? 
+					</a></li><li><a href="#Q6">
+						What is a Tabix file (.tbi)?
+					</a></li><li><a href="#Q7">
+						How do I select my files?
+					</a></li><li><a href="#Q8">
+						When the DNA.Land Compass says “Processing data,” where and how is my data being processed?
+					</a></li><li><a href="#Q9">
+						What information do you record, either from my genetic files or from my interaction with the site? 
+					</a></li><li><a href="#Q10">
+						What is a genotype? 
+					</a></li><li><a href="#Q11">
+						What is a SNP? 
+					</a></li><li><a href="#Q12">
+						What is an rsID? How can I find rsIDs to research?
+					</a></li><li><a href="#Q13">
+						What are the options in "Search"? 
+					</a></li><li><a href="#Q14">	
+						What are the sites you suggest using to explore my VCF file (SNPedia, dbSNP, etc.)? 
+					</a></li><li><a href="#Q15">
+						What is the information displayed for each SNP?
+					</a></li><li><a href="#Q16">
+						How accurate is the imputed VCF from DNA.Land?
+					</a></li><li><a href="#Q17">
+						What is imputation?
+					</a></li>
+				</ul>
+			</div>
+
+			<div class="questionDiv">
+				<span id="Q1" class="anchor"></span>
+				<h3>
+					Where can I get these files (.vcf.gz and .tbi)? 
+				</h3>
+				<span class="question">
+					If you have your 23andMe, Ancestry, or FamilyTreeDNA files, the easiest way to generate your VCF and Tabix files is through <a href="https://dna.land/vcf-info" target="_blank">DNA.Land</a>.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q1-1" class="anchor"></span>
+				<h3>
+					Does <em>Compass</em> provide information that connects my genotype to a physical trait?
+				</h3>
+				<span class="question">
+					Yes! To find out the significance of a specific genotype, first select the SNP you're interested in, then select the "SNPedia" tab. There, you will find a table that describes the physical effects of various possible genotypes.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q1-2" class="anchor"></span>
+				<h3>
+					What types of VCFs does <em>Compass</em> accept?
+				</h3>
+				<span class="question">
+					Compass accepts <strong>any</strong> <a href="http://useast.ensembl.org/info/website/tutorials/grch37.html" target="_blank">hg19/GRCh37</a>-compliant compressed VCF.
+					<br><br>
+					This includes VCFs that: 
+					<ul>
+					<li>Are imputed or not imputed</li>
+					<li>Come from <a href="http://dna.land" target="_blank">DNA.Land</a> or any other source</li>
+					<li>Are SNP arrays, produced from whole genome sequencing data, or from any other hg19-compatible source</li>
+					</ul>
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q1-3" class="anchor"></span>
+				<h3>
+					Does the VCF file need to have rsIDs?
+				</h3>
+				<span class="question">
+					The rsID column must exist within the VCF, but it does not have to follow any specific format. The rsID can even be a placeholder value, like "*". The rsID that is reported comes from our database, and we extract your genotypes by chromosome and position.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q1-4" class="anchor"></span>
+				<h3>
+					Does <em>Compass</em> accept VCF files that follows any format other than <a href="http://useast.ensembl.org/info/website/tutorials/grch37.html" target="_blank">Genome Build hg19/GRCh37</a>?
+				</h3>
+				<span class="question">
+					No. At this time, <em>Compass</em> requires that your compressed VCF and Tabix files use  the hg19/GRCh37 standard.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q2" class="anchor"></span>
+				<h3>
+					What is DNA.Land?
+				</h3>
+				<span class="question">
+					<a href="https://dna.land" target="_blank">DNA.Land</a> is a free service that helps users learn about their genome, and helps scientists make new discoveries. Users who have had their DNA sequenced upload their data and enter some basic information; in return, they receive access to an array of features, like information about their ancestry or relatives, while contributing to a dataset that scientists can use to make new discoveries.  
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q3" class="anchor"></span>
+				<h3>
+					What's happening with my files? 
+				</h3>
+				<span class="question">
+					Your files never leave your computer.  They are not sent to our servers, don’t ever travel over the Internet, and no data is ever stored from them once you leave the site. 
+
+					The DNA Compass tool uses your Tabix file (.tbi) to extract specific information from your compressed VCF (.vcf.gz). The tool then analyzes and presents this data. All of these steps occur on your computer. Your genetic and personal data are never exposed online. 
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q4" class="anchor"></span>
+				<h3>
+					How secure and private is my data? 
+				</h3>
+				<span class="question">
+					Using DNA.Land <em>Compass</em> does not expose any of your private information, which never leaves your computer. 
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q5" class="anchor"></span>
+				<h3>
+					What is a compressed VCF file (.vcf.gz)? 
+				</h3>
+				<span class="question">
+					 A compressed Variant Call Format is a list that contains information about your genotype at specific points in your genome. The file is very large, and it can be very difficult to open and extract useful information from. If you’re interested in learning more about VCFs and what they include, you can read more about them <a href="https://dna.land/vcf-info" target="_blank">here</a>.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q6" class="anchor"></span>
+				<h3>
+					What is a Tabix file (.tbi)?
+				</h3>
+				<span class="question">
+					Tabix (.tbi) is a binary file format for tab-delimited index files. These files act as a helper for your VCF. Once they’ve been read, we can use them to “jump” to a specific place in your VCF. Then, only the relevant information is decompressed. This makes the process of extracting information from your VCF files significantly faster.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q7" class="anchor"></span>
+				<h3>
+					How do I select my files?
+				</h3>
+				<span class="question">
+					Please navigate to the "Compass" page of this site and click on the cloud icon. Please make sure both files are in the same folder. If so, you can select by both of them by holding Shift ⇧ or Command ⌘ on your keyboard.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q8" class="anchor"></span>
+				<h3>
+					When the DNA.Land Compass says “Processing data,” where and how is my data being processed?
+				</h3>
+				<span class="question">
+					All your data is processed on your computer, directly in your browser. 
+
+					The DNA.Land Compass first finds the chromosome and position of the SNP a user has specified, and then it searches for and retrieves the relevant data. 
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q9" class="anchor"></span>
+				<h3>
+					What information do you record, either from my genetic files or from my interaction with the site? 
+				</h3>
+				<span class="question">
+					Your VCF and TBI are never transmitted, shared, or even sent to our servers by <em>Compass</em>. The only information we retain is technical metadata that we use for troubleshooting. 
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q10" class="anchor"></span>
+				<h3>
+					What is a genotype? 
+				</h3>
+				<span class="question">
+					A genotype is the genetic information in your body that determines who you are. We all are different genetically; a genotype describes how your genome is different from someone else’s at a specific point. For a detailed explanation of genotypes, please click <a href="https://en.wikipedia.org/wiki/Genotype">here</a>.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q11" class="anchor"></span>
+				<h3>
+					What is a SNP? 
+				</h3>
+				<span class="question">
+					A SNP is a single nucleotide polymorphism: a point in the human genome where variation exists. These mutations can have significant effects on an individual’s phenotype, and are thus of particular interest to those involved in genetics. They can also be analyzed to group people into haplogroups, groups of people who share a specific SNP and may descend from a single common ancestor. Please click <a href="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">here</a> for more on SNPs.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q12" class="anchor"></span>
+				<h3>
+					What is an rsID? How can I find rsIDs to research?
+				</h3>
+				<span class="question">
+					An rsID is a reference SNP cluster ID: a unique number linked to a specific SNP. Scientists and medical professionals use the rsID as a standard for identifying SNPs in a person’s genome This number is very important, as other information describing SNPs, for example its position, may change over time. 
+
+					General Internet searches for “SNPs relating to _” can reveal a fantastic amount of information about SNPs and their rsIDs. <a href="http://www.snpedia.com/index.php/Parkinson%27s_disease" target="_blank">SNPedia</a> contains information about thousands of SNPs and their rsIDs, and has organized them into categories for the ease of exploration.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q13" class="anchor"></span>
+				<h3>
+					What are the options in "Search"? 
+				</h3>
+				<span class="question">
+					These are preset categories we have assembled to show users how the Compass works. We hope that is also serves to provide users with basic information about their genome that may be useful to them. Each group is a list of rsIDs that describe SNPs related to a specific topic (for example: hair, eye color, skin, etc.). We encourage users to test out the Compass by exploring these groups, as well as entering other rsIDs that they are interested in!
+
+					<br>
+
+					<br>
+
+					For a full list of topics, please see <a href="groups.html">here</a>.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q14" class="anchor"></span>
+				<h3>	
+					What are the sites you suggest using to explore my VCF file (SNPedia, dbSNP, etc.)? 
+				</h3>
+				<span class="question">
+					These are resources we recommend to our users because they can be very helpful in uncovering information about specific SNPs. They are all free to use, and we believe that  users will be able to easily navigate through them. These resources will allow for exploration of information ranging in intensity from an overview of the importance of a specific genotype to detailed scientific studies. 
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q15" class="anchor"></span>
+				<h3>
+					What is the information displayed for each SNP?
+				</h3>
+				<span class="question">
+					In addition to your genotype, we display the coordinates of each SNP. This includes the chromosome on which it is located, as well as its position. Please note: for positions, we use the GRCh37/hg19 standard. The position number may be different in sources which use a different reference genome. 
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q16" class="anchor"></span>
+				<h3>
+					How accurate is the imputed VCF from DNA.Land?
+				</h3>
+				<span class="question">
+					DNA.Land is fairly accurate, but not 100%, since imputation—the process by which we estimate the missing information in your genotype—cannot be done with 100% certainty.That being said, in internal testing, our imputation algorithms correctly imputed about 99.994% of SNPs. However, since this is a stochastic, probabilistic analysis, there is <strong>always</strong> the possibility that we are displaying an incorrect genotyoe. <strong>Never</strong> use the information provided on this website as-is; <strong>always</strong> consult a certified clinician before making any medical decision. 
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q17" class="anchor"></span>
+				<h3>
+					What is imputation?
+				</h3>
+				<span class="question">
+					Imputation is a process by which gaps in your genome which weren't actually sequenced can be inferred. For more on imputation, please visit <a href="https://dna.land/impute-info">DNA.Land's explanation</a>.
+				</span>
+			</div>
+		</div>
+
+		<footer> 
+			<span>This app is presented as a tool for educational purposes and should not be used for clinical diagnosis.<br>A <a href="https://DNA.Land" target="_blank">DNA.Land</a> project<br>© 2015 Erlich Lab</span>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>	    
+		<script src="assets/Bootstrap/bootstrap.min.js"></script>
+	    <script src="assets/jQuery/jquery.easing.min.js"></script>
+
+	    <script src="assets/jQueryUI/jquery.mixitup.js"></script>
+	    <script src="assets/contact_me/contact_me.js"></script>
+	    <script src="assets/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+
+	    <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+
+	    <script>
+	    
+	    	$(function() { 
+
+	    		var q = $("span:target").parent();
+
+	    		var original = "#f2f2f2";
+	    		var highlight = "#bfedf2";
+
+	    		q.animate({ backgroundColor: highlight }, {
+	    			duration: 250, 
+	    			specialEasing: {
+	    				backgroundColor: "easeInElastic"
+	    			}
+	    			
+                }).animate({ backgroundColor: original }, {
+                	duration: 250,
+                	specialEasing: {
+	    				backgroundColor: "easeInElastic"
+	    			}
+                });
+
+	    		$('nav li a').each(function(){
+			    	var current = $(this).parent().width(); 
+			    	$(this).parent().width(current + 4);
+				});
+
+	    	});
+	    </script>
+
+	</body>
+
+	<script>
+	
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	    ga('create', 'UA-82628378-1', 'auto');
+	    ga('send', 'pageview');
+
+	</script>
+	
+</html>

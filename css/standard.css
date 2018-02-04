@@ -175,18 +175,18 @@ section.screenshot img {
 }
 
 .anchor { 
- display: block;
-	    position: absolute;
-	    width: 0;
-	    height: 0;
-	    z-index: -1;
-	    top: -80px !important;
-	    visibility: hidden
-			}
+	display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: -80px !important;
+/*    visibility: hidden check for problems with linking to faq items
+*/}
 
-			.questionDiv { 
-				position: relative !important;
-			}
+.questionDiv { 
+	position: relative !important;
+}
 
 
 #aboutBody { 

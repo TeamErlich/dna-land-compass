@@ -1,0 +1,223 @@
+/* 
+
+Copyright (C) 2016 Erlich Lab
+License: BSD (see LICENSE file) 
+
+*/
+
+body { 
+	padding-top: 130px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 0px;
+}
+
+html, body { 
+	overflow-x: hidden;
+}
+
+h2 { 
+	margin-top: -40px !important;
+	font-weight: 300 !important; 
+	color: grey;
+	height: 50px !important;
+}
+
+h3:not(.exp) { 
+	margin-top: -8px !important;
+	margin-bottom: -15px !important;
+	font-size: 1.8rem !important;
+}
+
+#aboutBody { 
+	text-align: left;
+	color: grey;
+	font-family: "Roboto", sans-serif !important;
+	font-size: 18px !important;
+	font-weight: 300 !important;
+}
+
+.fileNames { 
+	text-align: left !important;
+	padding-left: 20px;
+}
+
+
+
+nav { 
+	background: dimgrey!important;
+}
+
+#guideText a, #guideBody ol a { 
+	color:#29b0bc !important;
+
+}
+
+#faqText {
+	margin-top: -40px;
+	text-align: left;
+}
+#faqText a { 
+	color: #29b0bc;
+}
+
+footer { 
+	margin-top: 50px;
+	background-color: rgb(47, 47, 47);
+	height: 75px;
+	line-height: 75px;
+	font-size: 12px;
+	color: white; 
+	width: 100vw;
+	bottom: 0px;
+	margin-bottom: 0px;
+	position: relative;
+	text-align: center;
+	margin-left: -50px;
+	margin-right: -50px;
+	vertical-align: center;
+}
+
+.disclaimer { 
+	background-color: rgba(255, 77, 77, 0.5);
+	border: 2px solid rgba(255, 97, 97);
+	border-radius: 4px;
+	margin: 5px;
+	margin-top: 10px ;
+	padding: 5px;
+	color: darkred;
+}
+
+.disclaimer.hiddenAlertX {
+	display: none;
+}
+
+footer span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;  
+}
+
+footer a, h3 a, #content a:not(.inDisclaimer) { 
+	color:  #43c9d6;
+	text-decoration: none !important;
+}
+
+
+a.inDisclaimer {
+	color: rgb(120, 0, 0);
+	text-decoration: none !important;
+}
+
+#rsID, .typeahead {
+	background-color: white !important;
+}
+
+/* style SECTIONS */
+
+section { 
+	margin-top: 35px;
+	margin-bottom: 35px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.questionDiv {
+	margin-top: 75px;
+	margin-bottom: 75px;
+	background-color: #f2f2f2;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+section a, .questionDiv a { 
+	color:  #43c9d6;
+}
+
+.questionDiv h3 { 
+	margin-top: 0px;
+}
+
+ul.indented { 
+	margin-left: 60px;
+}
+
+section.indented {
+	margin-left: 50px;
+}
+
+section.indented ul { 
+	list-style-type: initial;
+}
+
+section.indented ul a { 
+	color: #29b0bc;
+}
+
+section.screenshot img { 
+	width: 100%;
+}
+
+#details { 
+	color: black !important;
+	text-align: left !important;
+}
+
+#details > a#override:hover { 
+	color: #00004d !important;
+}
+
+/* style the FAQ page */
+
+.questionDiv h3 { 
+	margin-bottom: 10px !important;
+}
+
+.anchor { 
+ display: block;
+	    position: absolute;
+	    width: 0;
+	    height: 0;
+	    z-index: -1;
+	    top: -80px !important;
+	    visibility: hidden
+			}
+
+			.questionDiv { 
+				position: relative !important;
+			}
+
+
+#aboutBody { 
+	text-align: left;
+}
+
+#progressAnimation.hidden { 
+	display: none;
+}
+
+#aboutBody h3 { 
+	margin-bottom: 10px !important;
+}
+
+
+#groupsList {
+	font-family: "Avenir", sans-serif !important;
+	color: rgb(50, 50, 50) !important;
+}
+
+/* CSS for loading bars */
+
+.loading { 
+	margin: 30px;
+	height: 7px;
+	background-color: #D3D3D3;
+}
+
+.indicator { 
+	margin: 0 auto;
+	width: 0;
+	height: inherit;
+	background-color: #6dd5df;
+}

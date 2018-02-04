@@ -10,6 +10,23 @@ body {
 	min-width: 1000px;
 }
 
+h4 { 
+	font-family: "Montserrat";
+	font-size: initial;
+}
+
+h5 { 
+	font-size: 20px;
+}
+
+hr { 
+	margin-top: 50px;
+	width: 100%;
+}
+
+
+/* Style the file input section */
+
 #details { 
 	padding-top: 40px;
 	display: block;
@@ -117,7 +134,7 @@ input[type="text"] {
 
 
 #content { 
-	overflow: hidden;
+	/*overflow: hidden;*/
 	margin-left: 30px;
 	margin-right: 30px;
 }
@@ -130,55 +147,18 @@ input[type="file"] {
 	all: initial;
 }
 
-h4 { 
-	font-family: "Montserrat";
-	font-size: initial;
+input#rsID, input.typeahead { 
+	padding-left: 5px;
+	width: 250px !important;
 }
 
-h5 { 
-	font-size: 20px;
-}
+/* end file input section */
 
 .useless {
 	visibility: hidden;
 	height: 0px;
 }
 
-hr { 
-	margin-top: 50px ;
-	width: 2000px;
-}
-
-input#rsID, input.typeahead { 
-	padding-left: 5px;
-	width: 250px !important;
-}
-
-input#rsID {	
-/*	width: ;
-*/}
-
-#infoiframe { 
-	width: 67%;
-	box-sizing: border-box;
-	margin: 0 auto;
-	border: 10px solid white;
-	height: 600px;
-	float: right;
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
-	border-left-width: 0px;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-#infoiframe.showsBackground { 
-/*	background: url("../img/loading.gif");
-*/		background-repeat: no-repeat;
-			background-position: center;
-
-
-}
 
 #byGroup { 
 	float: left;
@@ -204,11 +184,77 @@ input#rsID {
 	margin-bottom: 10px;
 }
 
+
 ul { 
 	list-style-type: none;
 }
 
-/*style the accordion*/
+/* style the cytoband drawing section */
+
+#cytobands { 
+	padding: 0px;
+}
+
+#secondPanel { 
+	margin-top: 10px;
+	border-radius: 10px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: white ;
+	vertical-align: center;
+
+}
+
+#secondPanel.showsBorder { 
+/*	border-color: #EEECDD;
+*/	border-color: #f2f2f2;
+
+}
+
+#cytobandsCanvas { 
+	height: 500px; 
+	width: 1000px;
+	margin-top: 10px;
+}
+
+svg text#error {
+	margin-top: 40px;
+	font-size: 16px;
+}
+
+/* end cytoband drawing styling */
+
+#firstPanel { 
+	height: 600px;
+	margin: 0 auto;
+/*	width: 1100px !important;
+*/}
+
+.explorerPanel {
+	margin: 0 auto;
+	width: 1100px !important;
+}
+
+#infoiframe { 
+	width: 67%;
+	box-sizing: border-box;
+	margin: 0 auto;
+	border: 10px solid white;
+	height: 600px;
+	float: right;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-left-width: 0px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#infoiframe.showsBackground { 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* style the accordion */
 
 #accordion { 
 	padding: 0px;
@@ -218,7 +264,6 @@ ul {
 	overflow-y: auto;
 	float: left;
 	width: 33%;
-	min-width: 300px;
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
@@ -237,13 +282,31 @@ ul {
 	border: none;
 }
 
-#accordion div { 
-/*	background-color: #4d8efe !important; */ /*for crevices between a.actions*/
-	background-color: #EEECDD !important; /*for crevices between a.actions*/
-
+#accordion div.ui-accordion-content { 
 	margin-bottom: 10px;
 	padding: 0px;
+}
+
+#accordion div.accordionDiv-extra {
+	color: white; 
+	text-align: left;
+	border-radius: 0px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+
+
+#accordion div.accordionDiv-buttons { 
 	height: 40px;
+/*	background-color: #EEECDD;
+*/	background-color: #f2f2f2;
+}
+
+#accordion div.accordionDiv-extra p.oddsRatio {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #accordion h3 {
@@ -257,7 +320,7 @@ ul {
 }
 
 #accordion h3:not(.presentedSection):hover, #accordion h3.disabled { 
-	background-color: #f2f2f2;
+	background-color: #dcdbdb;
 }
 
 #accordion h3.presentedSection { 
@@ -267,10 +330,12 @@ ul {
 	border-bottom-right-radius: 0px;
 }
 
-#accordion div { 
+#accordion > div { 
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+
+/* style the h3 accordion headers */ 
 
 h3, table { 
 	width: 100%;
@@ -281,25 +346,31 @@ h3 tr {
 }
 
 td.chromosome { 
-	width: 30%;
+	width: 25%;
 }
 
 td.rsIDText {
-	width: 30%;
+	width: 25%;
 }
 
 td.geno { 
-	width: 40%;
+	width: 25%;
 }
 
-
+td.cytoband { 
+	width: 25%;
+}
 
 a.action { 
 	height: 100%;
 	margin: 0 auto;
-
 	padding: 12px 1px 4px 1px;
 	width: 20%;
+/*	border-bottom: 2px solid #EEECDD;
+*/		
+
+	border-bottom: 2px solid #f2f2f2;
+
 
 	text-decoration: none !important;
 	color: white !important;
@@ -307,36 +378,29 @@ a.action {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 14px;
-	background-color: #4d8efe;
+	background-color: #585858;
 }
 
-
-
  a.action:active, a.action.active { 
-	color: #4d8efe !important; 
-	background-color: white;
-	text-decration: none !important;
+	color: #4d8efe; /*!important; */
+	background-color: #3e3e3e;
+	text-decoration: none !important;
 }
 
 a.action:hover { 
-	color: #4d8efe !important;
+	color: white;
 	background-color: rgb(236, 236, 236);
 	text-decoration: none !important;
+	background-color: #3e3e3e;
 }
 
 a.action[target="_blank"]::after { 
 	content: "↗";
 	font-size: 12px;
-
+	margin-right: -5px !important;
 	vertical-align: center !important;
 	padding-left: 2px;
 }
-
-a.action[target="_blank"]::after { 
-	margin-right: -5px !important;
-}
-
-
 
 a.action.left#override { 
 	padding-left: 3px !important;
@@ -346,23 +410,71 @@ a.action.right#override {
 	padding-right: 6px !important;
 }
 
-a.action { 
-	border-bottom: 2px solid #EEECDD;
+a.action:not(.left) {
+/*	border-left: 2px solid #EEECDD;
+*/
+	border-left: 2px solid #f2f2f2;
+
+	border-bottom-left-radius: 8px;
 }
 
-a.action:not(.left) {
-	border-left: 2px solid #EEECDD;
-	border-bottom-left-radius: 8px;
-/*	margin-left: 2px !important;
-*/}
-
 a.action:not(.right) {
-	border-right: 2px solid  #EEECDD;
-	border-bottom-right-radius: 8px;
-/*	margin-right: 2px !important;
-*/}
+/*	border-right: 2px solid  #EEECDD;
+*/		border-right: 2px solid #f2f2f2;
 
-/* TYPEAHEAD */
+	border-bottom-right-radius: 8px;
+}
+
+/* color map styling */
+
+h3:not(.presentedSection) span.RA-green { 
+	color: #00cc00;
+}
+
+h3:not(.presentedSection) span.RA-red, 
+p.riskAllele span.RA-red { 
+	color: red;
+}
+
+h3:not(.presentedSection) span.RA-black { 
+	color: black;
+}
+
+h3.RA-green.presentedSection,
+h3.RA-red.presentedSection, 
+h3.RA-black.presentedSection { 
+	color: white !important;
+}
+
+h3.RA-green.presentedSection { 
+	background-color: #45d245;
+}
+
+h3.RA-red.presentedSection { 
+	background-color: red;
+}
+
+h3.RA-black.presentedSection { 
+	/*background-color: #585858;*/
+	background-color: #4a4949;
+}
+
+#accordion div.accordionDiv-extra.RA-green {
+	background-color: #3e3e3e;
+
+}
+
+#accordion div.accordionDiv-extra.RA-red {
+	background-color: #3e3e3e;
+
+}
+
+#accordion div.accordionDiv-extra.RA-black {
+	background-color: #3e3e3e;
+}
+
+/* end color map styling */
+/* typeahead styling */
 
 .twitter-typeahead { 
 	vertical-align: top !important;
@@ -416,7 +528,7 @@ a.action:not(.right) {
     margin: 0;
 }
 
-
+/* end typeahead styling */
 /*animated incorrect rsID*/
 
 .invalid {

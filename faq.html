@@ -86,6 +86,16 @@ License: BSD (see LICENSE file)
 				<ul id="contents">
 					<li><a href="#Q1">
 						Where can I get these files (.vcf.gz and .tbi)? 
+					</a></li>
+					<li><a href="#Q1-1">
+						Does <em>Compass</em> provide information that connects my genotype to a physical trait?
+					</a></li>
+					<li><a href="#Q1-2">
+						What types of VCFs does <em>Compass</em> accept?
+					</a></li><li><a href="#Q1-3">
+						Does the data need to have rsIDs?
+					</a></li><li><a href="#Q1-4">
+						Does <em>Compass</em> accept data that follows any format other than hg19/GRCh37?
 					</a></li><li><a href="#Q2">
 						What is DNA.Land?
 					</a></li><li><a href="#Q3">
@@ -118,6 +128,14 @@ License: BSD (see LICENSE file)
 						How accurate is the imputed VCF from DNA.Land?
 					</a></li><li><a href="#Q17">
 						What is imputation?
+					</a></li><li><a href="#Q18">
+						What is "Magnitude"?
+					</a></li><li><a href="#Q19">
+						What is "Risk Allele"?
+					</a></li><li><a href="#Q20">
+						What do the colors mean about my genotype?
+					</a></li><li><a href="#Q21">
+						Why are magnitude or risk allele missing for some SNPs?
 					</a></li>
 				</ul>
 			</div>
@@ -129,6 +147,49 @@ License: BSD (see LICENSE file)
 				</h3>
 				<span class="question">
 					If you have your 23andMe, Ancestry, or FamilyTreeDNA files, the easiest way to generate your VCF and Tabix files is through <a href="https://dna.land/vcf-info" target="_blank">DNA.Land</a>.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q1-1" class="anchor"></span>
+				<h3>
+					Does <em>Compass</em> provide information that connects my genotype to a physical trait?
+				</h3>
+				<span class="question">
+					Yes! To find out the significance of a specific genotype, first select the SNP you're interested in, then select the "SNPedia" tab. There, you will find a table that describes the physical effects of various possible genotypes.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q1-2" class="anchor"></span>
+				<h3>
+					What types of VCFs does <em>Compass</em> accept?
+				</h3>
+				<span class="question">
+					Compass accepts <strong>any</strong> <a href="http://useast.ensembl.org/info/website/tutorials/grch37.html" target="_blank">hg19/GRCh37</a>-compliant compressed VCF.
+					<br><br>
+					This includes VCFs that: 
+					<ul>
+					<li>Are imputed or not imputed</li>
+					<li>Come from <a href="http://dna.land" target="_blank">DNA.Land</a> or any other source</li>
+					<li>Are SNP arrays, produced from whole genome sequencing data, or from any other hg19-compatible source</li>
+					</ul>
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q1-3" class="anchor"></span>
+				<h3>
+					Does the VCF file need to have rsIDs?
+				</h3>
+				<span class="question">
+					The rsID column must exist within the VCF, but it does not have to follow any specific format. The rsID can even be a placeholder value, like "*". The rsID that is reported comes from our database, and we extract your genotypes by chromosome and position.
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q1-4" class="anchor"></span>
+				<h3>
+					Does <em>Compass</em> accept VCF files that follows any format other than <a href="http://useast.ensembl.org/info/website/tutorials/grch37.html" target="_blank">Genome Build hg19/GRCh37</a>?
+				</h3>
+				<span class="question">
+					No. At this time, <em>Compass</em> requires that your compressed VCF and Tabix files use  the hg19/GRCh37 standard.
 				</span>
 			</div>
 			<div class="questionDiv">
@@ -157,7 +218,7 @@ License: BSD (see LICENSE file)
 					How secure and private is my data? 
 				</h3>
 				<span class="question">
-					Using DNA.Land <em>Compass</em> does not exposure any of your private information, which never leaves your computer. 
+					Using DNA.Land <em>Compass</em> does not expose any of your private information, which never leaves your computer. 
 				</span>
 			</div>
 			<div class="questionDiv">
@@ -287,6 +348,59 @@ License: BSD (see LICENSE file)
 					Imputation is a process by which gaps in your genome which weren't actually sequenced can be inferred. For more on imputation, please visit <a href="https://dna.land/impute-info">DNA.Land's explanation</a>.
 				</span>
 			</div>
+
+			<!-- New for Compass2 -->
+
+			<div class="questionDiv">
+				<span id="Q18" class="anchor"></span>
+				<h3>
+					What is "Magnitude"?
+				</h3>
+				<span class="question">
+					Magnitude is a measure of how linked a certain trait is with a particular SNP. This data comes from the GWAS Catalog of the European Bioinformatics Institute (EBI), and can either be the <a href="https://en.wikipedia.org/wiki/Odds_ratio">odds ratio</a> or <a href="https://www.ebi.ac.uk/gwas/docs/methods">beta cofficient</a> for a specific SNP in a trait. 
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q19" class="anchor"></span>
+				<h3>
+					What is "Risk Allele"?
+				</h3>
+				<span class="question">
+					The risk allele is the allele associated with inheriting a certain trait or condition in case-controlled genetic studies. 
+				</span>	
+			</div>
+			<div class="questionDiv">
+				<span id="Q20" class="anchor"></span>
+				<h3>
+					What do the colors mean about my genotype?
+				</h3>
+				<span class="question">
+
+					Red indicates that you have at least one copy of the risk allele. Green indicates that you have no copies of the risk allele. Black or grey means that the risk allele is unavailable; we do not know whether or not you have it. 
+
+					<br><br>
+
+					In this report, the user has the risk allele in the second SNP in the list (currently expanded), but not in the first or fourth SNP. Likewise, the risk allele for the third SNP is not known.
+
+										<br><br>
+
+
+<!-- 					<section class="screenshot">
+ -->						<img src="img/screenshots/colormap.png">
+<!-- 					</section>
+ -->					
+				</span>
+			</div>
+			<div class="questionDiv">
+				<span id="Q21" class="anchor"></span>
+				<h3>
+					Why are magnitude or risk allele missing for some SNPs?
+				</h3>
+				<span class="question">
+					Our information on magnitudes and risk alleles comes from the <a href="https://www.ebi.ac.uk/gwas/">GWAS Catalog of the European Bioinformatics Institute</a>. We cannot present these items when they're not included in the catalog.	
+				</span>
+			</div>
+
 		</div>
 
 		<footer> 

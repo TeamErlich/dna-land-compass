@@ -124,14 +124,12 @@ License: BSD (see LICENSE file)
 			</div>
 			<div id="byGroup" class="hiddeninput">
 				<span id="groupFormWrapper">
-											
+					
 					<a href="faq.html#Q13" target="_blank" id="searchText">Search</a>
-
-					<input id="typeahead" class="typeahead" type="text" placeholder="Example: Skin Pigmentation">
+ 					<input id="typeahead" class="typeahead" type="text" placeholder="Bipolar Disorder">
 
 				</span>
 			</div>
-
 			<br>
 
 			<div id="uselessBuffer" style="height: 30px;"></div>
@@ -145,10 +143,23 @@ License: BSD (see LICENSE file)
 			</div>
 
  			<hr>
- 			
-			<div id="accordion"></div>
+ 		
+ 			<div id="firstPanel" class="explorerPanel">
+				<div id="accordion"></div>
 
-			<iframe id="infoiframe" name="infoiframe" seamless="seamless" frameBorder="0"> </iframe>
+				<iframe id="infoiframe" name="infoiframe" seamless="seamless" frameBorder="0"> </iframe>
+			</div>
+
+			<div id="secondPanel"  class="explorerPanel">
+				<div id="cytobands">
+					<svg id="cytobandsCanvas"><text id="error" y="200"></text></svg>
+				</div>
+			</div>
+
+			<div id="thirdPanel" class="explorerPanel">
+
+			</div>
+			
 		</div>
 		<footer> 
 			<span>This app is presented as a tool for educational purposes and should not be used for clinical diagnosis.<br>Icons by <a style="color: #808080" href="http://www.icons8.com" target="_blank">icons8</a><br>A <a href="https://DNA.Land" target="_blank">DNA.Land</a> project<br>© 2015 Erlich Lab</span>
@@ -159,7 +170,10 @@ License: BSD (see LICENSE file)
 	    <script src="assets/Bootstrap/bootstrap.min.js"></script>
 	    <script src="assets/jQuery/jquery.easing.min.js"></script>
 
+	    		<script src="https://d3js.org/d3.v4.0.0-alpha.28.min.js"></script>
+
 	    <!-- Unique to Page -->
+	    <script src="js/Drawer.js"></script>
 	    <script src="js/explorer.js"></script>
 		<script src="assets/js-local-vcf/js-local-vcf.js"></script>
 		<script src="assets/JSLibs/jdataview.js"></script>

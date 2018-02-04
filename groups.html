@@ -102,7 +102,7 @@ License: BSD (see LICENSE file)
 
 	    	function getGroups() { 
 	    		$.ajax({
-					url: "http://df.charlie.teamerlich.org/api/v2/snps/_table/groupnames",
+					url: "http://df.charlie.teamerlich.org/api/v2/compass-v2/_table/unique_associations",
 					type: "GET", 
 					data: {
 						api_key: "94369a3701477abfbda08a237e17a1d88ba448bb81fb0026cce3f7ea004423cd"
@@ -121,11 +121,12 @@ License: BSD (see LICENSE file)
 
 	    		var resources = data.resource;
 
+	    		console.log(resources);
+
 				for (var value in resources) { 
-					var name = resources[value].name; 
+					var trait = resources[value].trait; 
 
-					$("#groupsList").append("<li>" + name + "</li>");
-
+					$("#groupsList").append("<li>" + trait + "</li>");
 
 				}
 	    	}
